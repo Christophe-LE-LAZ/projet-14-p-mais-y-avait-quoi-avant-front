@@ -8,7 +8,7 @@ import {
 } from 'react-leaflet';
 import { LeafletMouseEvent } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import 'leaflet/dist/images/marker-shadow.png';
+import 'leaflet/dist/assets/marker-shadow.png';
 import 'leaflet/dist/images/marker-icon.png';
 import './Map.scss';
 import { useAppDispatch, useAppSelector } from '../../hooks';
