@@ -8,6 +8,9 @@ import {
 } from 'react-leaflet';
 import { LeafletMouseEvent } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import 'leaflet/dist/images/marker-shadow.png';
+import 'leaflet/dist/images/marker-icon.png';
+import './Map.scss';
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import { fetchLocations } from '../../store/locationsReducer';
 import { fetchMemories } from '../../store/memoriesReducer';
@@ -74,6 +77,7 @@ export default function Map() {
         />
         {filteredLocations.map((location) => (
           <div key={location.id}>
+            {/* Utiliser le type personnalisé pour Marker */}
             <Marker
               position={[Number(location.latitude), Number(location.longitude)]}
               eventHandlers={{
